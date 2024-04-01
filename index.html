@@ -10,7 +10,7 @@
 </head>
 <body class="font-nunito">
   <!-- intro section     -->
-    <div
+    <div id="home"
       class=" sm:h-60 md:h-96  lg:h-screen 	 bg-gradient-to-t from-indigo-200 dark:from-slate-800 relative overflow-hidden"
     >
     <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
@@ -22,16 +22,16 @@
            <ul class="hidden md:flex space-x-10  text-sm text-gray-600 font-bold uppercase"
          >
            <li class="hover:text-gray-500">
-             <a href="#">homepage</a>
+             <a  href="#home">homepage</a>
            </li>
            <li class="hover:text-gray-500">
-             <a href="#about">about me</a>
+             <a  href="#about">about me</a>
            </li>
            <li class="hover:text-gray-500">
              <a href="#services">services</a>
            </li>
            <li class="hover:text-gray-500">
-             <a href="#works">works</a>
+             <a  href="#works">works</a>
            </li>
            <li class="hover:text-gray-500">
              <a href="#contact">contact</a>
@@ -46,19 +46,19 @@
           </div>
           <ul id="menu"  class="hidden bg-indigo-900  absolute top-0 left-0 w-full text-center p-10 space-y-10 rounded-b-3xl text-white">
             <li class="">
-              <a href="#">homepage</a>
+              <a class="hLink"  href="#">homepage</a>
             </li>
             <li class=" ">
-              <a href="#about">about me</a>
+              <a class="hLink" href="#about">about me</a>
             </li>
             <li class=" ">
-              <a href="#services">services</a>
+              <a class="hLink" href="#services">services</a>
             </li>
             <li class=" ">
-              <a href="#works">works</a>
+              <a class="hLink" href="#works">works</a>
             </li>
             <li class=" ">
-              <a href="#contact">contact</a>
+              <a class="hLink" href="#contact">contact</a>
             </li>
           </ul>
 
@@ -93,7 +93,7 @@
   </div>
 
   <!-- about -->
-  <div class="px-10">
+  <div class="px-10" id="about">
      <div class=" lg:flex-row container mx-auto flex  items-center py-40 gap-20 sm:flex-col-reverse">
        <!-- left -->
         <div class="relative "> 
@@ -137,7 +137,7 @@
   </div>
 
   <!-- services -->
-  <div>
+  <div id="services">
      <div class="container mx-auto">
        <!-- top -->
        <div class="flex flex-col items-center gap-3">
@@ -194,7 +194,7 @@
 
 
   <!-- Works -->
-  <div>
+  <div class="py-40" id="works">  
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col items-center gap-3">
@@ -250,7 +250,7 @@
  </div>
 
   <!-- Contact -->
-   <div>
+   <div id="contact">
      <div class="container mx-auto">
       <!-- top -->
         <div class="flex flex-col items-center gap-3">
@@ -268,6 +268,46 @@
         </form>
      </div>
    </div>
+
+   <!-- footer -->
+   <div class="w-full  top-0 bg-gray-800  dark:bg-slate-900">
+    <div class="container mx-auto py-5 flex justify-between items-center relative  " >
+       <div class="flex items-center gap-2">
+         <img src="./img/logo.png" alt="" class="w-8">
+         <span class="text-2xl text-bold text-indigo-900">Meshoko</span>
+        
+       </div>
+       <ul class="hidden md:flex space-x-10  text-sm text-gray-600 font-bold uppercase"
+       >
+         <li class="hover:text-gray-500">
+           <a href="#">homepage</a>
+         </li>
+         <li class="hover:text-gray-500">
+           <a href="#about">about me</a>
+         </li>
+         <li class="hover:text-gray-500">
+           <a href="#services">services</a>
+         </li>
+         <li class="hover:text-gray-500">
+           <a href="#works">works</a>
+         </li>
+         <li class="hover:text-gray-500">
+           <a href="#contact">contact</a>
+         </li>
+        </ul>
+        <div class="flex gap-2">
+        <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+        <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+        <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
+        <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+      </div>
+       <span class="hidden md:block font-medium text-white"> © 2024. Design with ♥️ by Maya Dev</span>
+    </div>
+
+    <div>
+       
+    </div>
+  </div>
   <script src="./app.js"></script>
   <script src="./autotyping.js"></script>
 </body>
