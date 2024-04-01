@@ -8,18 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="font-nunito">
+<body class="font-nunito ">
   <!-- intro section     -->
     <div id="home"
-      class=" sm:h-60 md:h-96  lg:h-screen 	 bg-gradient-to-t from-indigo-200 dark:from-slate-800 relative overflow-hidden"
+      class=" sm:h-60 md:h-96  lg:h-screen 	 bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
     >
     <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
         <div class="container mx-auto py-5 flex justify-between items-center relative  " >
            <div class="flex items-center gap-2">
              <img src="./img/logo.png" alt="" class="w-8">
-             <span class="text-2xl text-bold text-indigo-900">Meshoko</span>
+             <span class="text-2xl text-bold text-indigo-900 dark:text-white">Meshoko</span>
            </div>
-           <ul class="hidden md:flex space-x-10  text-sm text-gray-600 font-bold uppercase"
+           <ul class="hidden md:flex space-x-10  text-sm text-gray-600 dark:text-gray-100 font-bold uppercase"
          >
            <li class="hover:text-gray-500">
              <a  href="#home">homepage</a>
@@ -37,7 +37,7 @@
              <a href="#contact">contact</a>
            </li>
           </ul>
-          <img src="./img/moon.png" alt="" class="hidden md:block w-5 cursor-pointer">
+          <img id="moon" src="./img/moon.png" alt="" class="hidden md:block w-5 cursor-pointer">
           <!-- burger -->
           <div id="burger" class="space-y-1 md:hidden cursor-pointer z-20">
             <div class="w-6 h-0.5 bg-black"></div>
@@ -85,7 +85,7 @@
         <p id="text" class="text-red-500"></p>
       </div>
      <!-- texts -->
-     <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute bg-white top-64 buttom-0 right-10 m-auto p-6 h-fit w-1/3">
+     <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute bg-white dark:bg-slate-900 dark:shadow-slate-800 top-64 buttom-0 right-10 m-auto p-6 h-fit w-1/3">
        <h1 class="text-4xl text-indigo-900 font-bold">Hi, I'm Maya</h1>
        <p class="text-gray-400">Experienced Full Stack Web Developer proficient in using Livewire for front-end interactivity and Laravel dashboard frameworks like Nova and Filament for efficient back-end development. Skilled in creating dynamic web applications that deliver seamless user experiences.</p>
        <a href="#contact" class="text-xl bg-indigo-600 text-white px-3  py-2 w-fit rounded-md font-semibold">Hire Me</a>
@@ -93,7 +93,7 @@
   </div>
 
   <!-- about -->
-  <div class="px-10" id="about">
+  <div class="px-10 dark:bg-slate-900" id="about">
      <div class=" lg:flex-row container mx-auto flex  items-center py-40 gap-20 sm:flex-col-reverse">
        <!-- left -->
         <div class="relative "> 
@@ -106,9 +106,9 @@
 
        <!-- right -->
        <div class="my-auto flex flex-col gap-3">
-        <h1 class="text-indigo-600 font-bold">About Me</h1>
-        <h1 class="text-3xl font-meduim">Better Desgin</h1>
-        <h1 class="text-3xl font-meduim">Better Experience</h1>
+        <h1 class="text-indigo-600 font-bold dark:text-white">About Me</h1>
+        <h1 class="text-3xl font-meduim dark:text-white">Better Desgin</h1>
+        <h1 class="text-3xl font-meduim dark:text-white">Better Experience</h1>
         <p class="text-gray-500">
           I make dashboard with modern laravel frameworks like Nova and Filament 
           <br>
@@ -137,12 +137,12 @@
   </div>
 
   <!-- services -->
-  <div id="services">
+  <div id="services" class="dark:bg-slate-900">
      <div class="container mx-auto">
        <!-- top -->
        <div class="flex flex-col items-center gap-3">
          <h1 class="text-indigo-600 font-bold">Services</h1>
-         <h1 class=" font-bold text-3xl">What do I offer?</h1>
+         <h1 class=" font-bold text-3xl dark:text-white">What do I offer?</h1>
          <p class="w-1/2 text-center text-gray-400">I specialize in crafting dynamic web applications that seamlessly integrate user-friendly interfaces with robust backend functionality. Leveraging the power of Livewire for front-end interactions and Laravel for backend operations, I bring your digital vision to life with precision and efficiency.</p>
        </div>
 
@@ -152,35 +152,35 @@
           <!-- card -->
           <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3 my-3 md:my-10" >
              <img class="w-10" src="./img/icon.png" alt="">
-             <h1 class="font-meduim text-lg">Website Development</h1>
+             <h1 class="font-meduim text-lg dark:text-white">Website Development</h1>
               <p class="text-gray-400">develop web applications</p>
               <a href="" class="text-sm text-indigo-600 font-semibold">Read More</a>
           </div>
 
           <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3  my-3 md:my-10">
             <img class="w-10" src="./img/icon.png" alt="">
-            <h1 class="font-meduim text-lg">Website Development</h1>
+            <h1 class="font-meduim text-lg dark:text-white">Website Development</h1>
              <p class="text-gray-400">develop web applications</p>
              <a href="" class="text-sm text-indigo-600 font-semibold">Read More</a>
           </div>
 
          <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3  my-3 md:my-10">
           <img class="w-10" src="./img/icon.png" alt="">
-          <h1 class="font-meduim text-lg">Website Development</h1>
+          <h1 class="font-meduim text-lg dark:text-white">Website Development</h1>
            <p class="text-gray-400">develop web applications</p>
            <a href="" class="text-sm text-indigo-600 font-semibold">Read More</a>
           </div>
 
           <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3  my-3 md:my-10">
             <img class="w-10" src="./img/icon.png" alt="">
-            <h1 class="font-meduim text-lg">Website Development</h1>
+            <h1 class="font-meduim text-lg dark:text-white">Website Development</h1>
             <p class="text-gray-400">develop web applications</p>
             <a href="" class="text-sm text-indigo-600 font-semibold">Read More</a>
           </div>
 
           <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 flex flex-col gap-3  my-3 md:my-10">
             <img class="w-10" src="./img/icon.png" alt="">
-            <h1 class="font-meduim text-lg">Website Development</h1>
+            <h1 class="font-meduim text-lg dark:text-white">Website Development</h1>
             <p class="text-gray-400">develop web applications</p>
             <a href="" class="text-sm text-indigo-600 font-semibold">Read More</a>
           </div>
@@ -194,12 +194,12 @@
 
 
   <!-- Works -->
-  <div class="py-40" id="works">  
+  <div class="py-40 dark:bg-slate-900" id="works">  
     <div class="container mx-auto">
       <!-- top -->
       <div class="flex flex-col items-center gap-3">
         <h1 class="text-indigo-600 font-bold">PORFTFOLIO</h1>
-        <h1 class=" font-bold text-3xl">Works & Projects</h1>
+        <h1 class=" font-bold text-3xl dark:text-white">Works & Projects</h1>
         <p class="w-1/2 text-center text-gray-400">I specialize in crafting dynamic web applications that seamlessly integrate user-friendly interfaces with robust backend functionality. Leveraging the power of Livewire for front-end interactions and Laravel for backend operations, I bring your digital vision to life with precision and efficiency.</p>
       </div>
 
@@ -250,20 +250,20 @@
  </div>
 
   <!-- Contact -->
-   <div id="contact">
+   <div id="contact" class="dark:bg-slate-900">
      <div class="container mx-auto">
       <!-- top -->
         <div class="flex flex-col items-center gap-3">
           <h1 class="text-indigo-600 font-bold">Contact</h1>
-          <h1 class=" font-bold text-3xl">Have a Question?</h1>
+          <h1 class=" font-bold text-3xl dark:text-white">Have a Question?</h1>
           <p class="w-1/2 text-center text-gray-400">  Do you have an idea? Let's discuss it and see what we can do
             together.</p>
         </div>
       <!-- buttom -->
         <form action="" class="flex flex-col gap-5 items-center mt-5 p-8">
-           <input type="text" placeholder="Name" class="w-full md:w-1/2 ring-1 p-2 ring-indigo-300 rounded-sm">
-           <input type="email" placeholder="Email" class="w-full md:w-1/2 ring-1 p-2 ring-indigo-300 rounded-sm">
-           <textarea  cols="30" rows="10" placeholder="Message ..." class="w-full md:w-1/2 ring-1 p-2 ring-indigo-300 rounded-sm"></textarea>
+           <input type="text" placeholder="Name" class="w-full md:w-1/2 ring-1 p-2 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:text-white dark:ring-0">
+           <input type="email" placeholder="Email" class="dark:text-white dark:ring-0 dark:bg-slate-800 w-full md:w-1/2 ring-1 p-2 ring-indigo-300 rounded-sm">
+           <textarea  cols="30" rows="10" placeholder="Message ..." class=" dark:text-white dark:ring-0 dark:bg-slate-800 w-full md:w-1/2 ring-1 p-2 ring-indigo-300 rounded-sm"></textarea>
            <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer">Submit</button>
         </form>
      </div>
