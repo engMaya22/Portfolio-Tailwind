@@ -10,13 +10,60 @@
 </head>
 <body class="font-nunito">
   <!-- intro section     -->
-  <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 to-red-500">
+  <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 ">
      <nav class="fixed top-0 bg-white w-full">
-        <div class="container mx-auto py-5 flex justify-between" >
-            <span>1</span>
-            <span>2</span>  
-            <span>3</span>
+        <div class="container mx-auto py-5 flex justify-between items-center relative " >
+           <div class="flex items-center gap-2">
+             <img src="./img/logo.png" alt="" class="w-8">
+             <span class="text-2xl text-bold text-indigo-900">Meshoko</span>
+           </div>
+           <ul class="hidden md:flex space-x-10  text-sm text-gray-600 font-bold uppercase"
+         >
+           <li class="hover:text-gray-500">
+             <a href="#">homepage</a>
+           </li>
+           <li class="hover:text-gray-500">
+             <a href="#about">about me</a>
+           </li>
+           <li class="hover:text-gray-500">
+             <a href="#services">services</a>
+           </li>
+           <li class="hover:text-gray-500">
+             <a href="#works">works</a>
+           </li>
+           <li class="hover:text-gray-500">
+             <a href="#contact">contact</a>
+           </li>
+          </ul>
+          <img src="./img/moon.png" alt="" class="hidden md:block w-5 cursor-pointer">
+          <!-- burger -->
+          <div id="burger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul id="menu"  class="hidden bg-indigo-900  absolute top-0 left-0 w-full text-center p-10 space-y-10 rounded-b-3xl text-white">
+            <li class="">
+              <a href="#">homepage</a>
+            </li>
+            <li class=" ">
+              <a href="#about">about me</a>
+            </li>
+            <li class=" ">
+              <a href="#services">services</a>
+            </li>
+            <li class=" ">
+              <a href="#works">works</a>
+            </li>
+            <li class=" ">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
 
+        </div>
+
+        <div>
+           
         </div>
      </nav>
 
@@ -24,6 +71,8 @@
      <div>
 
      </div>
+
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>
