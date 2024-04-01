@@ -778,6 +778,10 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .items-center {
   align-items: center;
 }
@@ -922,6 +926,11 @@ video {
   padding-bottom: 10rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1031,6 +1040,10 @@ video {
     height: 15rem;
   }
 
+  .sm\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1058,6 +1071,10 @@ video {
     height: 24rem;
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1083,6 +1100,10 @@ video {
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
 
